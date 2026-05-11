@@ -8,7 +8,7 @@ export default function Projects() {
       <div className={styles.header}>
         <div>
           <p className="section-label">selected work</p>
-          <h2 className="section-title">Projects</h2>
+          <h2 className="section-title">Project</h2>
         </div>
         <span className={styles.badge}>
           <span className={`${styles.dot} pulse`} />
