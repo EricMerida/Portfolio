@@ -1,0 +1,15 @@
+.sub {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--color-text-secondary);
+  line-height: 1.65;
+  max-width: 480px;
+  margin-bottom: 1.5rem;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}

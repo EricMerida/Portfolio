@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+ 
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--teal-800);
+  background: var(--teal-100);
+  border-radius: 100px;
+  padding: 3px 10px;
+}
+ 
+.dot {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--teal-600);
+}
+ 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
