@@ -1,38 +1,26 @@
-const projects = [
-  {
-    id: 'fittrack',
-    name: 'IronLog',
-    desc: 'Full-stack fitness tracking app. Log workouts, track progress over time, track nutrition, and visualize personal dashboard.',
-    icon: '⚡',
-    color: 'blue',
-    tags: [
-      { label: 'React', color: 'blue' },
-      { label: 'Node.js', color: 'blue' },
-      { label: 'MongoDB', color: 'blue' },
-      { label: 'Express', color: 'blue' },
-      { label: 'JWT auth', color: 'blue' },
-    ],
-    liveUrl: 'https://fitness-app-plum-ten.vercel.app/',
-    githubUrl: 'https://github.com/EricMerida/Fitness-App',
-    featured: true,
-  },
-  {
-    id: 'casa-florida',
-    name: 'Casa Florida',
-    desc: 'AI-powered real estate education platform that helps Spanish-speaking buyers and sellers understand the Florida real estate process, documents, and transaction steps.',
-    icon: '🏡',
-    color: 'blue',
-    tags: [
-      { label: 'React', color: 'blue' },
-      { label: 'JavaScript', color: 'blue' },
-      { label: 'Anthropic API', color: 'blue' },
-      { label: 'AI Chat', color: 'blue' },
-      { label: 'Vercel', color: 'blue' },
-    ],
-    liveUrl: 'https://casa-florida-81c3.vercel.app/',
-    githubUrl: 'https://github.com/EricMerida/casa-florida',
-    featured: true,
-  },
-]
+import ProjectCard from './ProjectCard'
+import projects from '../data/projects'
+import styles from './Projects.module.css'
 
-export default projects
+export default function Projects() {
+  return (
+    <section id="projects" className="section">
+      <div className={styles.header}>
+        <div>
+          <p className="section-label">Deployed</p>
+          <h2 className="section-title">Projects</h2>
+        </div>
+        <span className={styles.badge}>
+          <span className={`${styles.dot} pulse`} />
+          {projects.length} {projects.length === 1 ? 'project' : 'projects'}
+        </span>
+      </div>
+
+      <div className={styles.grid}>
+        {projects.map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
+      </div>
+    </section>
+  )
+}
