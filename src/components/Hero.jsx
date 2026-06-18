@@ -52,7 +52,7 @@ export default function Hero() {
 
         <div className={styles.photoWrap}>
           <img
-            src="/profile.jpg"
+            src="/profile.jpeg"
             alt="Eric Merida"
             className={styles.photo}
           />
