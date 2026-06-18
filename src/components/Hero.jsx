@@ -20,7 +20,7 @@ export default function Hero() {
           <h1 className={styles.headline}>
             Full-stack Developer<br />
             &amp;<br />
-            <em className={styles.accent}>Former Realtor & Hospitality Professionalr.</em>
+            <em className={styles.accent}>Former Realtor & Hospitality Professional.</em>
           </h1>
 
           <p className={styles.sub}>
