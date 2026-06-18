@@ -25,7 +25,7 @@ export default function Hero() {
 
           <p className={styles.sub}>
             I transitioned into software engineering after building careers in real estate
-            and fine dining hospitality, where i developed strong communication, problem solving,
+            and fine dining hospitality, where I developed strong communication, problem solving,
             and client-focused skills. Today, I build full-stack applications using MERN stack,
             creating responsive user interface and scalable backend systems. My background
             allows me to combine technical expertise with a deep understanding of customer needs 
