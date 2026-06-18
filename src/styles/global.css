@@ -1,4 +1,4 @@
-/* ── Design tokens ── */
+/* ── Design tokens: Light (default) ── */
 :root {
   --font-display: 'Syne', sans-serif;
   --font-mono: 'DM Mono', monospace;
@@ -11,14 +11,12 @@
   --color-border: rgba(0, 0, 0, 0.1);
   --color-border-mid: rgba(0, 0, 0, 0.18);
 
-  /* Blue ramp */
   --blue-50: #e6f1fb;
   --blue-100: #b5d4f4;
   --blue-600: #185fa5;
   --blue-800: #0c447c;
   --blue-900: #042c53;
 
-  /* Teal ramp */
   --teal-100: #9fe1cb;
   --teal-600: #0f6e56;
   --teal-800: #085041;
@@ -27,26 +25,25 @@
   --radius-lg: 12px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg: #1a1a18;
-    --color-bg-secondary: #252523;
-    --color-text: #f0efe8;
-    --color-text-secondary: #a0a09a;
-    --color-text-tertiary: #6b6b67;
-    --color-border: rgba(255, 255, 255, 0.1);
-    --color-border-mid: rgba(255, 255, 255, 0.18);
+/* ── Dark theme — toggled via data-theme on <html> ── */
+[data-theme='dark'] {
+  --color-bg: #1a1a18;
+  --color-bg-secondary: #252523;
+  --color-text: #f0efe8;
+  --color-text-secondary: #a0a09a;
+  --color-text-tertiary: #6b6b67;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-border-mid: rgba(255, 255, 255, 0.18);
 
-    --blue-50: #042c53;
-    --blue-100: #0c447c;
-    --blue-600: #85b7eb;
-    --blue-800: #b5d4f4;
-    --blue-900: #e6f1fb;
+  --blue-50: #042c53;
+  --blue-100: #0c447c;
+  --blue-600: #85b7eb;
+  --blue-800: #b5d4f4;
+  --blue-900: #e6f1fb;
 
-    --teal-100: #085041;
-    --teal-600: #5dcaa5;
-    --teal-800: #9fe1cb;
-  }
+  --teal-100: #085041;
+  --teal-600: #5dcaa5;
+  --teal-800: #9fe1cb;
 }
 
 /* ── Reset & base ── */
@@ -60,6 +57,7 @@ body {
   color: var(--color-text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
 a { color: inherit; text-decoration: none; }
@@ -75,11 +73,12 @@ button {
 .portfolio {
   max-width: 760px;
   margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 /* ── Shared section styles ── */
 .section {
-  padding: 2.5rem 1.5rem;
+  padding: 2.5rem 0;
   border-bottom: 0.5px solid var(--color-border);
 }
 
@@ -112,6 +111,7 @@ button {
   font-weight: 600;
   letter-spacing: 0.02em;
   transition: opacity 0.15s;
+  white-space: nowrap;
 }
 
 .btn-primary:hover { opacity: 0.8; }
@@ -128,6 +128,7 @@ button {
   font-size: 13px;
   font-weight: 500;
   transition: background 0.15s;
+  white-space: nowrap;
 }
 
 .btn-secondary:hover { background: var(--color-bg-secondary); }
@@ -172,3 +173,11 @@ button {
 }
 
 .pulse { animation: pulse 2s ease-in-out infinite; }
+
+/* ── Mobile ── */
+@media (max-width: 480px) {
+  .portfolio { padding: 0 1rem; }
+  .section   { padding: 2rem 0; }
+  .btn-primary,
+  .btn-secondary { padding: 9px 14px; font-size: 12px; }
+}
