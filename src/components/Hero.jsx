@@ -19,8 +19,8 @@ export default function Hero() {
 
           <h1 className={styles.headline}>
             Full-stack Developer<br />
-            Former Realtor & Hospitality Professional &amp;<br />
-            <em className={styles.accent}>builder.</em>
+            &amp;<br />
+            <em className={styles.accent}>Former Realtor & Hospitality Professionalr.</em>
           </h1>
 
           <p className={styles.sub}>
