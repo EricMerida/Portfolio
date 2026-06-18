@@ -8,7 +8,7 @@ export default function Contact() {
  
       <p className={styles.sub}>
         Open to junior software engineering, frontend, and full-stack opportunities, and collaborations.
-        Feel free to reach out - I typically respond within 12 hours.
+        Feel free to reach out at anytime.
       </p>
  
       <div className={styles.actions}>
