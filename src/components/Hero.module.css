@@ -1,8 +1,31 @@
 .hero {
-  padding: 3.5rem 1.5rem 3rem;
+  padding: 3.5rem 0 3rem;
   border-bottom: 0.5px solid var(--color-border);
 }
 
+/* Two-column: text left, photo right */
+.inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.content { flex: 1; min-width: 0; }
+
+/* ── Photo ── */
+.photoWrap { flex-shrink: 0; padding-top: 0.4rem; }
+
+.photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid var(--color-border-mid);
+  display: block;
+}
+
+/* ── Tag ── */
 .tag {
   display: inline-flex;
   align-items: center;
@@ -24,8 +47,10 @@
   height: 6px;
   border-radius: 50%;
   background: var(--blue-600);
+  flex-shrink: 0;
 }
 
+/* ── Headline ── */
 .headline {
   font-size: 42px;
   font-weight: 800;
@@ -56,6 +81,7 @@
   margin-bottom: 2.5rem;
 }
 
+/* ── Stats ── */
 .stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -83,7 +109,19 @@
   font-family: var(--font-mono);
 }
 
-@media (max-width: 480px) {
-  .headline { font-size: 32px; }
+/* ── Mobile ── */
+@media (max-width: 560px) {
+  .hero    { padding: 2rem 0; }
+  .inner   { flex-direction: column; gap: 1.25rem; }
+  .photoWrap { padding-top: 0; }
+  .photo   { width: 72px; height: 72px; }
+  .headline { font-size: 30px; letter-spacing: -1px; }
+  .sub     { font-size: 13px; }
+  .stats   { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .statNum { font-size: 18px; }
+}
+
+@media (max-width: 360px) {
+  .headline { font-size: 26px; }
   .stats    { grid-template-columns: 1fr; }
 }
