@@ -13,3 +13,13 @@
   gap: 10px;
   flex-wrap: wrap;
 }
+
+@media (max-width: 480px) {
+  .actions {
+    flex-direction: column;
+  }
+
+  .actions a {
+    justify-content: center;
+  }
+}
