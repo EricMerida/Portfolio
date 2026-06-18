@@ -18,15 +18,18 @@ export default function Hero() {
           </div>
 
           <h1 className={styles.headline}>
-            Full-stack<br />
-            developer &amp;<br />
+            Full-stack Developer<br />
+            | Former Realtor & Hospitality Professional &amp;<br />
             <em className={styles.accent}>builder.</em>
           </h1>
 
           <p className={styles.sub}>
-            I build responsive full-stack web applications using the MERN stack,
-            from backend APIs and database design to polished frontend interfaces.
-            Currently seeking junior software engineering opportunities.
+            I transitioned into software engineering after building careers in real estate
+            and fine dining hospitality, where i developed strong communication, problem solving,
+            and client-focused skills. Today, I build full-stack applications using MERN stack,
+            creating responsive user interface and scalable backend systems. My background
+            allows me to combine technical expertise with a deep understanding of customer needs 
+            and buisness goals.
           </p>
 
           <div className={styles.actions}>
