@@ -19,7 +19,7 @@ export default function Hero() {
 
           <h1 className={styles.headline}>
             Full-stack Developer<br />
-            | Former Realtor & Hospitality Professional &amp;<br />
+            Former Realtor & Hospitality Professional &amp;<br />
             <em className={styles.accent}>builder.</em>
           </h1>
 
