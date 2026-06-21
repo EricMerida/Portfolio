@@ -21,14 +21,18 @@ export default function Hero() {
       </div>
 
       <h1 className={styles.headline}>
-        Full-stack<br />
-        developer &amp;<br />
-        <em className={styles.accent}>builder.</em>
+        Full-Stack<br />
+        <em className={styles.accent}>Developer.</em>
       </h1>
+
+      <p className={styles.subtitle}>
+        Former Realtor &amp; Hospitality Professional
+      </p>
 
       <p className={styles.sub}>
         I build responsive full-stack web applications using the MERN stack,
-        from backend APIs and database design to polished frontend interfaces.
+        from backend APIs and database design to polished frontend interfaces. 
+        I speak fluently in English and Spanish.
         Currently seeking junior software engineering opportunities.
       </p>
 
