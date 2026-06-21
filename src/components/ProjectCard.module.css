@@ -8,37 +8,42 @@
 
 .card:hover {
   border-color: var(--color-border-mid);
-  background: var(--color-bg-secondary);
 }
 
 /* Featured card gets a blue accent */
 .featured {
   border: 1.5px solid var(--blue-100);
-  background: var(--blue-50);
 }
 
-.featured:hover {
-  background: var(--blue-50);
+/* ── Preview screenshot ── */
+.bannerWrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--color-bg-secondary);
+  border-bottom: 0.5px solid var(--color-border);
 }
 
-/* ── Preview banner — subtle strip ── */
 .banner {
   width: 100%;
-  height: 72px;
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-  opacity: 0.12;
-  transition: opacity 0.2s ease;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  transition: transform 0.3s ease;
 }
 
 .card:hover .banner {
-  opacity: 0.2;
+  transform: scale(1.03);
 }
 
 /* ── Card body ── */
 .body {
   padding: 1.25rem;
+}
+
+.featured .body {
+  background: var(--blue-50);
 }
 
 .top {
