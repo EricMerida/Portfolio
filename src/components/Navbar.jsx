@@ -2,8 +2,9 @@ import { useTheme } from '../context/ThemeContext'
 import styles from './Navbar.module.css'
 
 const links = [
-  { label: 'projects', href: '#projects' },
+  { label: 'about',    href: '#about'    },
   { label: 'skills',   href: '#skills'   },
+  { label: 'projects', href: '#projects' },
   { label: 'contact',  href: '#contact'  },
 ]
 
