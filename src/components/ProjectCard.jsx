@@ -6,12 +6,16 @@ export default function ProjectCard({ project }) {
   return (
     <article className={`${styles.card} ${featured ? styles.featured : ''}`}>
 
-      {/* ── Preview banner ── */}
+      {/* ── Preview screenshot ── */}
       {previewImage && (
-        <div
-          className={styles.banner}
-          style={{ backgroundImage: `url(${previewImage})` }}
-        />
+        <div className={styles.bannerWrap}>
+          <img
+            src={previewImage}
+            alt={`${name} homepage preview`}
+            className={styles.banner}
+            loading="lazy"
+          />
+        </div>
       )}
 
       <div className={styles.body}>
