@@ -31,12 +31,21 @@
   font-weight: 800;
   line-height: 1.05;
   letter-spacing: -1.5px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .accent {
   font-style: normal;
   color: var(--blue-600);
+}
+
+.subtitle {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.01em;
+  margin-bottom: 1.25rem;
 }
 
 .sub {
@@ -86,6 +95,7 @@
 @media (max-width: 480px) {
   .hero     { padding: 1.5rem 0 2rem; }
   .headline { font-size: 30px; letter-spacing: -1px; }
+  .subtitle { font-size: 13px; }
   .sub      { font-size: 13px; }
   .stats    { grid-template-columns: 1fr 1fr; gap: 8px; }
   .statNum  { font-size: 18px; }
