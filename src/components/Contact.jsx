@@ -14,8 +14,8 @@ export default function Contact() {
         <h2 className="section-title">Contact</h2>
 
         <p className={styles.sub}>
-          Open to junior software engineering, frontend, and full-stack opportunities, and collaborations.
-          Feel free to reach out - I typically respond within 12 hours.
+          Open to junior software engineering, frontend, and full-stack opportunities, web/mobile developer roles, and collaborations.
+          Feel free to reach out.
         </p>
 
         <div className={styles.actions}>
