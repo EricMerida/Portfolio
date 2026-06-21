@@ -15,12 +15,13 @@ export default function About() {
           <h2 className="section-title">About Me</h2>
 
           <p className={styles.bio}>
-            I'm Eric — a full-stack developer who likes turning ideas into
-            working software. I build with the MERN stack, from designing
-            APIs and databases to shaping the interfaces people actually use.
-            I'm self-motivated, curious, and currently looking for a junior
-            software engineering role where I can keep learning and building
-            things that matter.
+            Before I wrote a line of code, I spent years building relationships —
+            first in hospitality, then as a Realtor, where every deal came down
+            to listening closely, communicating clearly, and solving problems
+            under pressure. That client-first mindset is what pulled me into
+            software development. I bring the same business instincts and
+            people skills to engineering: understanding what a user actually
+            needs, then building something that delivers it.
           </p>
         </div>
 
