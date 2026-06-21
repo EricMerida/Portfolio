@@ -11,7 +11,7 @@ export default function Intro() {
         className={`reveal ${visible ? 'reveal-visible' : ''} ${styles.inner}`}
       >
         <p className={styles.greeting}>Hi, welcome to my portfolio</p>
-        <p className={styles.sub}>scroll down to see what I've been building</p>
+        <p className={styles.sub}>scroll down to see a bit about me</p>
       </div>
 
       <div className={styles.scrollHint} aria-hidden="true">
