@@ -4,19 +4,19 @@ import styles from './Skills.module.css'
 const skillGroups = [
   {
     group: 'frontend',
-    skills: ['React', 'JavaScript', 'HTML/CSS', 'Vite', 'Responsive Design'],
+    skills: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'HTML/CSS', 'Tailwind CSS', 'Redux Toolkit', 'Recharts'],
   },
   {
     group: 'backend',
-    skills: ['Node.js', 'Express', 'REST APIs', 'Authentication/JWT', 'Python'],
+    skills: ['Node.js', 'Express', 'REST APIs', 'NextAuth.js', 'JWT', 'Zod'],
   },
   {
     group: 'database',
-    skills: ['MongoDB', 'Mongoose', 'SQL', 'PostgreSQL'],
+    skills: ['MongoDB', 'PostgreSQL', 'Prisma ORM', 'Supabase'],
   },
   {
     group: 'tooling',
-    skills: ['Git', 'GitHub', 'Vercel', 'Postman'],
+    skills: ['Git', 'GitHub', 'Vercel', 'Postman', 'Anthropic Claude API', 'i18n'],
   },
 ]
 
