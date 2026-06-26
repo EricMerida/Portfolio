@@ -1,5 +1,17 @@
 const projects = [
   {
+    id: 'job-tracker',
+    name: 'Job Tracker',
+    desc: 'Bilingual SaaS app to track job applications with Google OAuth, a drag-and-drop Kanban board, and AI-powered cover letter and interview prep generation using the Anthropic Claude API with streaming responses. Features a stats dashboard with Recharts, PDF resume upload, and full EN/ES language support.',
+    icon: '💼',
+    color: 'blue',
+    previewImage: '/job-tracker-preview.png',
+    tags: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma', 'NextAuth.js', 'Anthropic API', 'Tailwind CSS'],
+    liveUrl: 'https://job-tracker-three-eta.vercel.app/',
+    githubUrl: 'https://github.com/EricMerida/Job-Tracker',
+    featured: true,
+  },
+  {
     id: 'ironlog',
     name: 'IronLog',
     desc: 'Full-stack fitness tracking app with workout logging, nutrition tracking, authentication, and dashboard metrics. Built custom REST APIs for workout management and integrated the USDA FoodData Central API with access to 50,000+ food items for nutrition and meal tracking.',
@@ -24,5 +36,4 @@ const projects = [
     featured: true,
   },
 ]
-
 export default projects
