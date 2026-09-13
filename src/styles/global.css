@@ -73,12 +73,19 @@ button {
 
 /* ── Layout ── */
 .portfolio {
-  max-width: 760px;
+  max-width: 1040px;
   margin: 0 auto;
   padding: 0 1.5rem;
   position: relative;
   z-index: 1;
 }
+
+@media (min-width: 901px) {
+  .portfolio {
+    padding-left: 96px;
+  }
+}
+
 /* ── Shared section styles ── */
 .section {
   padding: 2.5rem 0;
