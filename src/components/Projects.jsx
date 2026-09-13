@@ -13,19 +13,13 @@ export default function Projects() {
         className={`reveal ${visible ? 'reveal-visible' : ''}`}
       >
         <div className={styles.header}>
-          <div>
-            <p className="section-label">Deployed</p>
-            <h2 className="section-title">Projects</h2>
-          </div>
-          <span className={styles.badge}>
-            <span className={`${styles.dot} pulse`} />
-            {projects.length} {projects.length === 1 ? 'project' : 'projects'}
-          </span>
+          <h2 className={styles.heading}>Projects</h2>
+          <span className={styles.count}>{projects.length} shipped</span>
         </div>
 
-        <div className={styles.grid}>
-          {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+        <div className={styles.list}>
+          {projects.map((project, i) => (
+            <ProjectCard key={project.id} project={project} index={i} />
           ))}
         </div>
       </div>
