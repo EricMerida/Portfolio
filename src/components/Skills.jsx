@@ -20,6 +20,8 @@ const skillGroups = [
   },
 ]
 
+const totalSkills = skillGroups.reduce((sum, g) => sum + g.skills.length, 0)
+
 export default function Skills() {
   const [ref, visible] = useScrollReveal()
 
@@ -29,20 +31,20 @@ export default function Skills() {
         ref={ref}
         className={`reveal ${visible ? 'reveal-visible' : ''}`}
       >
-        <p className="section-label">what i work with</p>
-        <h2 className="section-title">Skills</h2>
+        <div className={styles.header}>
+          <h2 className={styles.heading}>Skills</h2>
+          <span className={styles.count}>{totalSkills} tools</span>
+        </div>
 
         <div className={styles.grid}>
           {skillGroups.map(({ group, skills }) => (
-            <div key={group} className={styles.group}>
+            <div key={group} className={styles.column}>
               <p className={styles.groupName}>{group}</p>
-              <div className={styles.chips}>
+              <ul className={styles.list}>
                 {skills.map((skill) => (
-                  <span key={skill} className={styles.chip}>
-                    {skill}
-                  </span>
+                  <li key={skill} className={styles.skill}>{skill}</li>
                 ))}
-              </div>
+              </ul>
             </div>
           ))}
         </div>
