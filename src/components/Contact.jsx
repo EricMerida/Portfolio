@@ -10,8 +10,7 @@ export default function Contact() {
         ref={ref}
         className={`reveal ${visible ? 'reveal-visible' : ''}`}
       >
-        <p className="section-label">get in touch</p>
-        <h2 className="section-title">Contact</h2>
+        <h2 className={styles.heading}>Contact</h2>
 
         <p className={styles.sub}>
           Open to junior software engineering, frontend, and full-stack opportunities, web/mobile developer roles, and collaborations.
@@ -48,4 +47,5 @@ export default function Contact() {
       </div>
     </section>
   )
+}
 }
