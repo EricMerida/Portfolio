@@ -20,6 +20,8 @@
   --teal-100: #9fe1cb;
   --teal-600: #0f6e56;
   --teal-800: #085041;
+  --accent-cold: #6fb8ff;
+  --accent-warm: #ffb454;
 
   --radius-md: 8px;
   --radius-lg: 12px;
@@ -74,8 +76,9 @@ button {
   max-width: 760px;
   margin: 0 auto;
   padding: 0 1.5rem;
+  position: relative;
+  z-index: 1;
 }
-
 /* ── Shared section styles ── */
 .section {
   padding: 2.5rem 0;
