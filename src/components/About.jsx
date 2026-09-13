@@ -11,8 +11,15 @@ export default function About() {
         className={`reveal ${visible ? 'reveal-visible' : ''} ${styles.inner}`}
       >
         <div className={styles.text}>
-          <p className="section-label">get to know me</p>
-          <h2 className="section-title">About Me</h2>
+          <div className={styles.trail}>
+            <span>hospitality</span>
+            <i className="ti ti-arrow-right" aria-hidden="true" />
+            <span>real estate</span>
+            <i className="ti ti-arrow-right" aria-hidden="true" />
+            <span className={styles.trailCurrent}>software</span>
+          </div>
+
+          <h2 className={styles.heading}>About</h2>
 
           <p className={styles.bio}>
             Before I wrote a line of code, I spent years building relationships —
