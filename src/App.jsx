@@ -1,4 +1,5 @@
 import { ThemeProvider } from './context/ThemeContext'
+import ParticleField from './components/ParticleField'
 import Navbar from './components/Navbar'
 import Intro from './components/Intro'
 import Hero from './components/Hero'
@@ -12,6 +13,7 @@ import './styles/global.css'
 export default function App() {
   return (
     <ThemeProvider>
+       <ParticleField />
       <Navbar />
       <Intro />
       <div className="portfolio">
